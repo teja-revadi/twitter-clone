@@ -1,9 +1,12 @@
 from django.contrib import admin
 
 # Register your models here.
-from twitter.models import Tweet, Interaction, UserProfile
+from twitter.models import Tweet, Interaction, UserProfile, User
 
-# admin.site.register(Profile)
+
+@admin.register(User)
+class UserAdmin(admin.ModelAdmin):
+    pass
 
 @admin.register(Tweet)
 class TweetAdmin(admin.ModelAdmin):

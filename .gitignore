@@ -3,3 +3,10 @@
 
 # Ignore .DS_Store files (macOS Finder metadata files)
 .DS_Store
+
+# ignore db
+*.sqlite3
+
+# ignore pyc files
+**/__pycache__/
+*.py[cod]
