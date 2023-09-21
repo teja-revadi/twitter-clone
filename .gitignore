@@ -1,0 +1,5 @@
+# Ignore .idea directory (used by JetBrains IDEs)
+.idea/
+
+# Ignore .DS_Store files (macOS Finder metadata files)
+.DS_Store
