@@ -10,3 +10,6 @@
 # ignore pyc files
 **/__pycache__/
 *.py[cod]
+
+# ignore media files
+twitter_backend/media/
