@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <div class="leftcolumn">
+        <select id="listSelector">
+          <option value="accounts-to-follow">Accounts to Follow</option>
+          <option value="my-following">My Following</option>
+          <option value="my-followers">My Followers</option>
+        </select>
+        <br /><br />
+        <ol id="users"></ol>
+        <ol id="my_following"></ol>
+        <ol id="my_followers"></ol>
+      </div>
+      <div class="rightcolumn">
+        <div class="header-button-container">
+          <div class="tabs">
+            <button id="allTweetsTab" class="tab-button active">Feed</button>
+            <button id="myTweetsTab" class="tab-button">My Tweets</button>
+          </div>
+          <div class="buttons">
+            <a href="profile.html" class="profile"> My Profile </a>
+            <button id="openModalBtn" class="green-button">Create Tweet</button>
+            <button id="logout-button">Logout</button>
+          </div>
+        </div>
+        <div class="all-lists">
+          <ul id="tweet-list" class="tab active"></ul>
+          <ul id="Mytweet-list" class="tab"></ul>
+        </div>
+
+        <div id="tweetModal" class="modal">
+          <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Create a Tweet</h2>
+
+            <textarea id="tweetText" placeholder="Enter your tweet"></textarea>
+
+            <button id="submitTweet">Tweet</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="users_myfollowing_myfollowers.js"></script>
+    <script src="creating_tweet.js"></script>
+    <script src="all_tweets-my_tweets.js"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="profile-container">
+      <div class="login-header">
+        <h2>My Profile</h2>
+        <button id="openModalBtn" class="chnge_password">
+          Change Password
+        </button>
+        <br /><br />
+        <div id="my_Profile"></div>
+        <br /><br />
+        <h2>Edit Profile</h2>
+        <br /><br />
+      </div>
+
+      <div class="form-group">
+        <p>
+          Profile Photo :
+          <input
+            type="file"
+            id="profile_photo"
+            name="profile_photo"
+            accept="image/*"
+          />
+        </p>
+      </div>
+      <div>
+        <input
+          type="text"
+          id="first_name"
+          name="first_name"
+          placeholder="First Name"
+        />
+      </div>
+      <br /><br />
+      <div>
+        <input
+          type="text"
+          id="last_name"
+          name="last_name"
+          placeholder="Last Name"
+        />
+      </div>
+      <br /><br />
+      <div>
+        <button id="login-button" class="login-button">Update Details</button>
+        <a
+          style="color: blue; font-size: 18px; margin-left: 20px"
+          href="secure.html"
+          >Home</a
+        >
+      </div>
+      <div id="message1"></div>
+
+      <div id="passwordModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeModal">&times;</span>
+
+          <h2>Change Password</h2>
+          <textarea
+            type="text"
+            id="old_password"
+            name="old_password"
+            placeholder="Old Password"
+            required
+          ></textarea>
+          <textarea
+            type="text"
+            id="new_password"
+            name="new_password"
+            placeholder="New Password"
+            required
+          ></textarea>
+          <button id="submitpassword">Update Password</button>
+        </div>
+      </div>
+    </div>
+    <script src="profile.js"></script>
+  </body>
+</html>

@@ -1,0 +1,280 @@
+
+/* Reset some default styles */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.profile{
+    margin-right: 50px;
+    font-size: 20px;
+    color: #1DA1F2;
+}
+img {
+    width: 25px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 10px;
+  }
+ /* Style for the dropdown container */
+ select {
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.leftcolumn {
+    width : 25%;
+    background-color: #fff; /* Background color for the left part (optional) */
+}
+
+#my_following{
+    display: none;
+}
+#my_followers{
+    display: none;
+}
+.rightcolumn {
+    width : 75%;
+    background-color: #fff; /* Background color for the left part (optional) */
+}
+.page {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+/* Style the tweet content */
+.tweet-content {
+    margin-right: 40%;
+    border: 0.5px solid #1DA1F2; background-color:white;
+    border-radius: 5px;
+    word-wrap: break-word; 
+    white-space: pre-wrap; 
+    padding: 10px;
+    min-height: 5em; 
+
+}
+.follow-button{
+    margin-left : 10%;
+   
+}
+/* Style the like button */
+.like-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #333 ;
+}
+
+.like-button.liked {
+    color: red;
+}
+
+/* Style the retweet button */
+.retweet-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #333 ;
+}
+
+.retweet-button.retweeted {
+    color: #1DA1F2;
+}
+
+/* Add your CSS styles here */
+     
+      .tab {
+        display: none;
+      }
+
+      .active {
+        display: block;
+      }
+      .tabs {
+        margin-left: 300px;
+        display: flex; /* Make the tabs horizontal */
+        flex-grow: 1;
+        font-size: 18px; 
+      }
+      
+
+      .tab-button {
+        padding: 1px 20px;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        color: #333;
+        
+      }
+     
+      .tab-button.active {
+        color: black;
+        text-decoration: underline;
+        text-decoration-color: #1DA1F2;; /* Set the underline color to blue */
+        text-decoration-thickness: 4px;
+        text-underline-offset: 6px;
+      }
+      .green-button {
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 11px 20px;
+        cursor: pointer;
+        border-radius: 5px; /* Rounded corners */
+      }
+      .green-button:hover {
+        background-color: #0a5c14; /* Darker red on hover (you can choose a different color) */
+    }
+
+
+/* tweet text in modal */
+/* Apply styles to the textarea */
+#tweetText {
+    width: 100%; /* Set the width to 100% to make it expand to the container's width */
+    height: 100px; /* Set the initial height as needed */
+    padding: 10px; /* Add padding for spacing inside the textarea */
+    border: 1px solid #007bff; /* Add a border to the textarea */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 16px; /* Set the font size */
+    resize: vertical; /* Allow vertical resizing (optional) */
+   
+}
+
+/* Style the placeholder text */
+#tweetText::placeholder {
+    color: #999; /* Set the color of the placeholder text */
+}
+
+/* Style when the textarea is in focus (clicked) */
+#tweetText:focus {
+    font-size: 20px;
+    border-color: #007bff; /* Change the border color when focused */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a box shadow when focused (optional) */
+}
+
+/* Styles for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 999; 
+  }
+  
+  .modal-content {
+    text-align: center; 
+    background-color: #fff;
+    margin: 20% auto;
+    padding: 20px;
+    height: 40%;
+    width: 40%;
+    border-radius: 5px;
+    justify-content: space-between;
+    
+    
+  }
+  .modal-content h2{
+    margin-bottom: 50px;
+  }
+  
+  .modal-content textarea{
+    margin-bottom: 50px;
+  }
+
+  .close {
+    float: right;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  /* Styles for the tweet input and button */
+  textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    margin-bottom: 10px;
+  }
+  #submitTweet {
+    display: block;
+    margin: 0 auto;
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center; /* Center the button text horizontally */
+  }
+  
+  #submitTweet:hover {
+    background-color: #0d7cc4;
+  }
+  
+ 
+  
+/* for my tweet list  */
+.header-button-container {
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 300px; */
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+  }
+
+
+
+
+/* Tweet list styles */
+ul#tweet-list {
+    list-style: none;
+}
+
+ul#tweet-list li {
+    background-color: #fff;
+    border: 0.5px solid #ddd;
+    margin-bottom: 0px;
+    padding: 10px;
+}
+/* MyTweet list styles */
+ul#Mytweet-list {
+    list-style: none;
+}
+
+ul#Mytweet-list li {
+    background-color: #fff;
+    border: 0.5px solid #ddd;
+    margin-bottom: 0px;
+    padding: 10px;
+}
+/* Logout button styles */
+#logout-button {
+    background-color: #f44336; /* Red background color (you can choose a different color) */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding for button size */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    font-size: 16px; /* Font size */
+}
+
+#logout-button:hover {
+    background-color: #d32f2f; /* Darker red on hover (you can choose a different color) */
+}

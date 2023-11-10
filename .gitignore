@@ -12,4 +12,4 @@
 *.py[cod]
 
 # ignore media files
-twitter_backend/media/
+backend/media/
