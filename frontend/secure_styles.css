@@ -35,6 +35,15 @@ li {
     width : 25%;
     background-color: #fff; /* Background color for the left part (optional) */
 }
+#listSelector{
+background-color: #1DA1F2;
+color: #ffffff;
+border-radius: 5px;
+border : None;
+margin-left: 100px;
+margin-top: 50px;
+
+}
 
 #my_following{
     display: none;

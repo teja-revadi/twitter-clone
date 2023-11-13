@@ -55,7 +55,7 @@ function fetchUsers() {
       .then((data) => {
         data.forEach((user) => {
           const li = document.createElement("li");
-          li.innerHTML = `${user.username}<button id="follow-button-${user.id}" class="follow-button" > Follow
+          li.innerHTML = `${user.username}<button id="follow-button-${user.id}" class="follow-button" style="background-color: #1DA1F2; color: #ffffff;border-radius:5px; border: none;"> Follow
       </button><br><br>`;
 
           UserList.appendChild(li);
